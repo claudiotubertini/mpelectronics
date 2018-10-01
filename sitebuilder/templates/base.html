@@ -1,0 +1,83 @@
+{% load staticfiles %}
+{% load icons %}
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="it">
+	<head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="{{ description|default:'MP Electronic Systems, tra Modena e Correggio, è
+    specializzata negli allarmi, nella videosorveglianza e nella domotica.' }}">
+    <meta name="keywords" content="{{ keywords|default:'Impianti antifurto antincendio Modena Correggio
+    videosorveglianza climatizzazione domotica automazioni allarmi' }}">
+    <title>{% block title %}MP Electronic Systems{% endblock %}</title>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
+   
+ <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+	</head>
+	<body id="{% block body-id %}body{% endblock %}">
+        {% block top-nav-wrapper %}
+		<!-- Header -->
+			<header id="header" {% if slug == 'index' %}class="alt"{% endif %}>
+				<div class="logo"><a href="{% url 'page' 'index' %}">MP Electronic Systems</a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+                    <li><a href="{% url 'page' 'index' %}">Home</a></li>
+					<li><a href="{% url 'page' 'contatti' %}">Contatti</a></li>
+					<li><a href="{% url 'page' 'chi_siamo' %}">Chi siamo</a></li>
+					<li><a href="{% url 'page' 'antincendio' %}">Antincendio</a></li>
+					<li><a href="{% url 'page' 'videosorveglianza' %}">Videosorveglianza</a></li>
+					<li><a href="{% url 'page' 'antifurto' %}">Antifurto</a></li>
+					<li><a href="{% url 'page' 'climatizzazione' %}">Climatizzazione</a></li>
+					<li><a href="{% url 'page' 'automazioni' %}">Automazioni</a></li>
+					<li><a href="{% url 'page' 'allarmi_tecnici' %}">Allarmi tecnici</a></li>
+					<li><a href="{% url 'page' 'domotica' %}">Domotica</a></li>
+				</ul>
+			</nav>
+            {% endblock %}
+            {% block content %}{% endblock %}
+		
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a  href="{% url 'page' 'contatti' %}" class="icon fa-envelope-o"><span class="label">Scrivi un messaggio</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; MP Electronic Systems. All rights reserved.
+				</div>
+			</footer>
+
+        <!-- Scripts -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'js/skel.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>

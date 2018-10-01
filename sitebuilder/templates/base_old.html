@@ -1,0 +1,120 @@
+{% load staticfiles %}
+{% load icons %}
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="{{ description|default:'MP Electronic Systems, basata tra Modena e Correggio, è
+    specializzata nel settore degli allarmi, della videosorveglianza e della domotica.' }}">
+    <meta name="keywords" content="{{ keywords|default:'Impianti antifurto antincendio Modena Correggio
+    videosorveglianza climatizzazione domotica automazioni allarmi' }}">
+    <title>{% block title %}MP Electronic Systems{% endblock %}</title>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
+   
+ <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body id="{% block body-id %}body{% endblock %}">
+{% block top-nav-wrapper %}
+<header class="blog-header py-3 px-3 bg-dark">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1 text-light">
+             <p>
+                 {% icon 'phone' %} 333 333 3333</p>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo" href="#">
+                <p><img src="{% static 'images/logo-mp-1.png' %}" height="75" width="539" class="img-fluid"></p>
+                <h3 class="blog-header-logo text-light">Videosorveglianza e telesoccorso </h3>
+            </a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center text-light">
+
+           <p>  {% icon 'envelope-o' %}
+
+               <a class="text-light" href="mailto:info@mpelectronicsystem.it?subject=E-mail dal sito">info@mpelectronicsystem.it</a></p>
+          </div>
+        </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <!--<a class="navbar-brand" href="/">Rapid Prototypes</a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMio1" aria-controls="navbarToggleMio1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+             <div class="collapse navbar-collapse justify-content-between" id="navbarToggleMio1">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" {% if slug == 'index' %}class="active"{% endif %} >
+            <a class="nav-link" href="/">Home {% if slug == 'index' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+             <li class="nav-item" {% if slug == 'contatti' %}class="active"{% endif %}>
+            <a class="nav-link" href="{% url 'page' 'contatti' %}">Contatti{% if slug == 'contatti' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+             <li class="nav-item" {% if slug == 'chi_siamo' %}class="active"{% endif %}>
+            <a class="nav-link" href="{% url 'page' 'chi_siamo' %}">Chi siamo{% if slug == 'chi_siamo' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+            <li class="nav-item"{% if slug == 'antifurto' %}class="active"{% endif %} >
+            <a class="nav-link" href="{% url 'page' 'antifurto' %}">Antifurto {% if slug == 'antifurto' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com/" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Antincendio</a>
+          <div class="dropdown-menu" aria-labelledby="antincendio">
+            <a class="dropdown-item" href="{% url 'page' 'rilevazione_incendi' %}">Rilevazione incendi</a>
+            <a class="dropdown-item" href="{% url 'page' 'fughe_gas' %}">Rilevazione fughe di gas</a>
+            <a class="dropdown-item" href="{% url 'page' 'rilevazione_incendi' %}">Evacuatori di fumo e calore</a>
+          </div>
+        </li>
+         <li class="nav-item"{% if slug == 'antifurto' %}class="active"{% endif %} >
+            <a class="nav-link" href="{% url 'page' 'videosorveglianza' %}">Videosorveglianza {% if slug == 'videosorveglianza' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+          <li class="nav-item"{% if slug == 'antifurto' %}class="active"{% endif %} >
+            <a class="nav-link" href="{% url 'page' 'allarmi_tecnici' %}">Allarmi tecnici {% if slug == 'allarmi_tecnici' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+          <li class="nav-item"{% if slug == 'antifurto' %}class="active"{% endif %} >
+            <a class="nav-link" href="{% url 'page' 'climatizzazione' %}">Climatizzazione {% if slug == 'climatizzazione' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+           <li class="nav-item"{% if slug == 'antifurto' %}class="active"{% endif %} >
+            <a class="nav-link" href="{% url 'page' 'domotica' %}">Domotica {% if slug == 'domotica' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+           <li class="nav-item"{% if slug == 'antifurto' %}class="active"{% endif %} >
+            <a class="nav-link" href="{% url 'page' 'automazioni' %}">Automazioni {% if slug == 'automazioni' %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+        </ul>
+             <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+          </form>
+
+            </div>
+       </nav>
+      </header>
+
+    {% endblock %}
+    {% block content %}{% endblock %}
+    <hr>
+
+   <footer class="bg-dark">
+    <div class="container">
+         <p class="text-light">&copy; {% now 'Y' %} MP Electronic System di p.i. Pivetti Marco P.IVA: 02914710369<br />
+       Sede: Via Canaletto, 40/b/c – 41030 S.Prospero (MO) - Tel: 059 809387 – Cell: 335 6116222 
+      </p>
+      <p class="text-light">Privacy policy</p> 
+    </div>
+   </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+</body>
+</html>
