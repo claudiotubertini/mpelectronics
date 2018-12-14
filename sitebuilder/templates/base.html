@@ -1,11 +1,6 @@
 {% load staticfiles %}
 {% load icons %}
 <!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html lang="it">
 	<head>
         <meta charset="utf-8">
@@ -24,9 +19,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
    
  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<link rel="icon" href="{% static 'images/logo-mp-1.ico' %}">
 	</head>
 	<body id="{% block body-id %}body{% endblock %}">
-        {% block top-nav-wrapper %}
+
 		<!-- Header -->
 			<header id="header" {% if slug == 'index' %}class="alt"{% endif %}>
 				<div class="logo"><a href="{% url 'page' 'index' %}">MP Electronic Systems</a></div>
@@ -39,16 +35,17 @@
                     <li><a href="{% url 'page' 'index' %}">Home</a></li>
 					<li><a href="{% url 'page' 'contatti' %}">Contatti</a></li>
 					<li><a href="{% url 'page' 'chi_siamo' %}">Chi siamo</a></li>
-					<li><a href="{% url 'page' 'antincendio' %}">Antincendio</a></li>
-					<li><a href="{% url 'page' 'videosorveglianza' %}">Videosorveglianza</a></li>
 					<li><a href="{% url 'page' 'antifurto' %}">Antifurto</a></li>
-					<li><a href="{% url 'page' 'climatizzazione' %}">Climatizzazione</a></li>
+					<li><a href="{% url 'page' 'antincendio' %}">Rilevazione Antincendio</a></li>
+					<li><a href="{% url 'page' 'videosorveglianza' %}">Videosorveglianza</a></li>
 					<li><a href="{% url 'page' 'automazioni' %}">Automazioni</a></li>
+					<li><a href="{% url 'page' 'climatizzazione' %}">Climatizzazione</a></li>
+
 					<li><a href="{% url 'page' 'allarmi_tecnici' %}">Allarmi tecnici</a></li>
 					<li><a href="{% url 'page' 'domotica' %}">Domotica</a></li>
 				</ul>
 			</nav>
-            {% endblock %}
+
             {% block content %}{% endblock %}
 		
 
@@ -56,15 +53,21 @@
 			<footer id="footer">
 				<div class="container">
 					<ul class="icons">
-						<li><a href="https://twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<!--<li><a href="https://twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
+						<!--<li><a href="https://www.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
+						<!--<li><a href="https://www.instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
 						<li><a  href="{% url 'page' 'contatti' %}" class="icon fa-envelope-o"><span class="label">Scrivi un messaggio</span></a></li>
 					</ul>
 				</div>
 				<div class="copyright">
-					&copy; MP Electronic Systems. All rights reserved.
+					&copy; MP Electronic Systems. Tutti i diritti sono riservati.
 				</div>
+				<div><p class="text-secondary">MP Electronic System di p.i. Pivetti Marco P.IVA: 02914710369<br />Sede: Via Canaletto, 40/b/c – 41030 S.Prospero (MO)<br />
+
+Tel: 059 809387 – Cell: 335 6116222 - Mail: info@mpelectronicsystem.it
+
+</p><p><a href="{% url 'page' 'privacy'%}">Privacy</a></p>
+</div>
 			</footer>
 
         <!-- Scripts -->

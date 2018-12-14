@@ -1,69 +1,53 @@
-{% block context %}
-{
-    "description": "Product Pricing Plans",
-    "keywords": "products,pricing,buy me",
-    "plans": [
-        {
-            "name": "Starter",
-            "price": "Free",
-            "class": "success",
-            "features": [1]
-        },
-        {
-            "name": "Basic",
-            "price": "$10 / month",
-            "class": "danger",
-            "features": [1, 2]
-        },
-        {
-            "name": "Enterprise",
-            "price": "$20 / month",
-            "class": "info",
-            "features": [1, 2, 3]
-        }
-    ],
-    "features": [
-        "Feature #1",
-        "Feature #2",
-        "Feature #3"
-    ]
-}
-{% endblock %}
+{% load staticfiles %}
+<section id="One" class="wrapper style3">
+                <div class="inner">
+                    <header class="align-center">
+                        <p>La protezione della casa e dell'ufficio</p>
+                        <h2>Automazioni</h2>
+                    </header>
+                </div>
+            </section>
+            <section id="two" class="wrapper style2">
+                <div class="inner">
+                    <div class="box text-dark">
+                        <div class="content">
 
-<div class="container py-5">
-    <h1>Pagina in preparazione</h1>
-</div>
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<h2>Available Pricing Plans</h2>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--{% for plan in plans %}-->
-        <!--<div class="col-md-4">-->
-            <!--<div class="panel panel-{{ plan.class }}">-->
-                <!--<div class="panel-heading">-->
-                    <!--<h4 class="text-center">-->
-                    <!--{{ plan.name }} Plan - {{ plan.price }}</h4>-->
-                <!--</div>-->
-                <!--<ul class="list-group list-group-flush text-center">-->
-                    <!--{% for feature in features %}-->
-                    <!--<li class="list-group-item -->
-                    <!--{% if forloop.counter not in plan.features %}-->
-                    <!--disabled {% endif %}">{{ feature }}</li>-->
-                    <!--{% endfor %}-->
-                <!--</ul>-->
-                <!--<div class="panel-footer">-->
-                    <!--<a class="btn btn-lg btn-block btn-{{ plan.class }}" href="#">BUY NOW!</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-       <!---->
-       <!--{% endfor %}-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<p>{% lorem %}</p>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+                            <div class="row py-5">
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Quanto-costa-mettere-l-automazione-per-cancello-correggio.png' %}" width="300px" alt="" /></div>
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Barriere-per-parcheggi-crevalcore.png' %}" width="300px" alt="" /></div>
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Strada-privata.png' %}" width="300px" alt="" /></div>
+                            </div>
+                           <h3 >Automazione per il tuo cancello di casa</h3>
+<p>Alcune persone continuano a scendere dall&#8217;automobile, aprire con fatica e manualmente il <strong>cancello</strong> <strong>di casa</strong>, risalire in auto per fare altri cinque metri e tornare indietro a piedi per richiudere il cancello!</p>
+<>Se anche tu sei stanco di tutto questo e vuoi mettere un’automazione sul tuo <strong>cancello di casa</strong>, rivolgiti a noi!<br />
+Operativi tra Correggio, San Giovanni in Persiceto e in tutta la provincia bolognese, reggiana e modenese, ci occupiamo <strong>dell’automazione di cancelli scorrevoli, a battente e di sbarre.</strong><br />
+Vuoi sapere <strong>quanto costa</strong> rendere automatici i tuoi <strong>ingressi</strong>?</p>
+<p>Contattaci per richiedere un preventivo gratuito.
+Applichiamo un prezzo molto competitivo.</p>
+
+
+                            <h3>Dissuasori di sosta e barriere automatiche per parcheggi</h3>
+<p>Installiamo <strong>barriere automatiche ad uso molto intensivo</strong>, in grado di gestire passaggi utili di elevate metrature.</p>
+<p>Sono ideali per qualsiasi contesto grazie all&#8217;ampia gamma di accessori di cui dispone, al <strong>lampeggiante integrato e alla predisposizione per il montaggio delle fotocellule.</strong><br />
+Per quanto riguarda i dissuasori di sosta invece, per la loro installazione su strada privata <strong>è necessario valutare se sia possibile operare sul suolo in questione</strong> o se vi siano autorizzazioni da richiedere a terzi.<br />
+
+<p>Contattaci per richiedere un preventivo gratuito.</p>
+
+                            <p>Come faccio a capire esattamente cosa mi serve?</p>
+
+                            <p>Non preoccuparti, contattaci e ti forniremo tutto il supporto necessario per la tua scelta.</p>
+
+
+
+    <div class="mx-auto" style="width: 200px;"> <ul class="actions fit">
+           <li> <a class="btn button special fit" href="{% url 'page' 'contatti' %}" role="button">Contattaci</a></li></ul></div>
+           <p class="align-center">per richiedere preventivi gratuiti e maggiori informazioni
+
+            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>

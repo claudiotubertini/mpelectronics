@@ -1,69 +1,55 @@
-{% block context %}
-{
-    "description": "Product Pricing Plans",
-    "keywords": "products,pricing,buy me",
-    "plans": [
-        {
-            "name": "Starter",
-            "price": "Free",
-            "class": "success",
-            "features": [1]
-        },
-        {
-            "name": "Basic",
-            "price": "$10 / month",
-            "class": "danger",
-            "features": [1, 2]
-        },
-        {
-            "name": "Enterprise",
-            "price": "$20 / month",
-            "class": "info",
-            "features": [1, 2, 3]
-        }
-    ],
-    "features": [
-        "Feature #1",
-        "Feature #2",
-        "Feature #3"
-    ]
-}
-{% endblock %}
+{% load staticfiles %}
+<section id="One" class="wrapper style3">
+                <div class="inner">
+                    <header class="align-center">
+                        <p>La protezione dell'azienda e dell'ufficio</p>
+                        <h2>Allarmi tecnici</h2>
+                    </header>
+                </div>
+            </section>
+            <section id="two" class="wrapper style2">
+                <div class="inner">
+                    <div class="box text-dark">
+                        <div class="content">
 
-<div class="container py-5">
-    <h1>Pagina in preparazione</h1>
-</div>
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<h2>Available Pricing Plans</h2>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--{% for plan in plans %}-->
-        <!--<div class="col-md-4">-->
-            <!--<div class="panel panel-{{ plan.class }}">-->
-                <!--<div class="panel-heading">-->
-                    <!--<h4 class="text-center">-->
-                    <!--{{ plan.name }} Plan - {{ plan.price }}</h4>-->
-                <!--</div>-->
-                <!--<ul class="list-group list-group-flush text-center">-->
-                    <!--{% for feature in features %}-->
-                    <!--<li class="list-group-item -->
-                    <!--{% if forloop.counter not in plan.features %}-->
-                    <!--disabled {% endif %}">{{ feature }}</li>-->
-                    <!--{% endfor %}-->
-                <!--</ul>-->
-                <!--<div class="panel-footer">-->
-                    <!--<a class="btn btn-lg btn-block btn-{{ plan.class }}" href="#">BUY NOW!</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-       <!---->
-       <!--{% endfor %}-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<p>{% lorem %}</p>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+                            <div class="row py-5">
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Allarmi-tecnici-per-impianti-termici-modena-.png' %}" width="300px" alt="" /></div>
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Sensori-di-segnalazione-per-impianti-industriali.png' %}" width="300px" alt="" /></div>
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Installazione-interfoni-correggio.png' %}" width="300px" alt="" /></div>
+                            </div>
+                            <h3>Installazione di allarmi tecnici</h3>
+<p>Esistono differenti tipologie di allarmi ambientali o <strong>allarmi tecnici</strong> installabili sia in abitazioni
+    che in ambienti lavorativi. Tutti possono essere gestiti in domotica.</p>
+
+
+                       <h3>Impianti industriali</h3>
+<p>I dispositivi per la rilevazione di anomalie, come fughe di gas, blocco delle caldaie, diminuzioni dei livelli
+    di serbatoi dovuti a perdite di sostanze, sono collegati ad una centralina di trasmissione dati, che consente di
+    monitorare in modo costante il corretto svolgimento dei processi industriali, delle catene di produzione,
+    della lavorazione e dello stoccaggio.</p>
+
+
+
+                       <h3>Interfoni</h3>
+<p>L&#8217;interfono rappresenta un dispositivo di trasmissione e ricezione voce ed allarmi;
+    viene utilizzato in situazioni o luoghi in cui il semplice o combinato impedimento della suddivisione,
+    del rumore ambientale o dell&#8217;eccessiva distanza, non permettono la naturale comunicazione vocale.</p>
+
+
+<p>La nostra azienda Mp Electronic System si occupa dell’installazione e della manutenzione di sensori di segnalazione
+    per impianti industriali, termici, antincendio e interfoni.<br />
+<p>Contattaci per ricevere un preventivo gratuito inerente alla fornitura di <strong>allarmi tecnici</strong> per le tue <strong>macchine industriali</strong>.</p>
+
+
+    <div class="mx-auto" style="width: 200px;"> <ul class="actions fit">
+           <li> <a class="btn button special fit" href="{% url 'page' 'contatti' %}" role="button">Contattaci</a></li></ul></div>
+           <p class="align-center">per richiedere preventivi gratuiti e maggiori informazioni
+
+            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>

@@ -1,69 +1,77 @@
-{% block context %}
-{
-    "description": "Product Pricing Plans",
-    "keywords": "products,pricing,buy me",
-    "plans": [
-        {
-            "name": "Starter",
-            "price": "Free",
-            "class": "success",
-            "features": [1]
-        },
-        {
-            "name": "Basic",
-            "price": "$10 / month",
-            "class": "danger",
-            "features": [1, 2]
-        },
-        {
-            "name": "Enterprise",
-            "price": "$20 / month",
-            "class": "info",
-            "features": [1, 2, 3]
-        }
-    ],
-    "features": [
-        "Feature #1",
-        "Feature #2",
-        "Feature #3"
-    ]
-}
-{% endblock %}
+{% load staticfiles %}
 
-<div class="container py-5">
-    <h1>Pagina in preparazione</h1>
-</div>
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<h2>Available Pricing Plans</h2>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--{% for plan in plans %}-->
-        <!--<div class="col-md-4">-->
-            <!--<div class="panel panel-{{ plan.class }}">-->
-                <!--<div class="panel-heading">-->
-                    <!--<h4 class="text-center">-->
-                    <!--{{ plan.name }} Plan - {{ plan.price }}</h4>-->
-                <!--</div>-->
-                <!--<ul class="list-group list-group-flush text-center">-->
-                    <!--{% for feature in features %}-->
-                    <!--<li class="list-group-item -->
-                    <!--{% if forloop.counter not in plan.features %}-->
-                    <!--disabled {% endif %}">{{ feature }}</li>-->
-                    <!--{% endfor %}-->
-                <!--</ul>-->
-                <!--<div class="panel-footer">-->
-                    <!--<a class="btn btn-lg btn-block btn-{{ plan.class }}" href="#">BUY NOW!</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-       <!---->
-       <!--{% endfor %}-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<p>{% lorem %}</p>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+   <section id="One" class="wrapper style3">
+                <div class="inner">
+                    <header class="align-center">
+                        <p>La protezione della casa e dell'ufficio</p>
+                        <h2>Videosorveglianza</h2>
+                    </header>
+                </div>
+            </section>
+            <section id="two" class="wrapper style2">
+                <div class="inner">
+                    <div class="box text-dark">
+                        <div class="content">
+                           
+                            <div class="row">
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Costi-telecamere-di-videosorveglianza-modena.png' %}" width="300px" alt="" /></div>
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Telecamere-per-centri-commerciali-modena.png' %}" width="300px" alt="" /></div>
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/telecamera_WA0006.jpg' %}" width="300px" alt="" /></div>
+                            </div>
+                            <p>La protezione della nostra casa rappresenta un argomento molto importante a cui pensare,
+                                soprattutto se viviamo in un edificio isolato o in un appartamento a piano terra,
+                                quindi più soggetto al rischio di furto.</p>
+                            <p class="font-weight-bold">Varie tipologie di telecamere</p>
+<p>Generalmente, per questa tipologia di impianto, si utilizzano telecamere filari.<br />
+
+La telecamera ordinaria non può effettuare visioni notturne, per questo motivo viene spesso installato un faro
+    o una luce per illuminare il campo della telecamera.<br />
+    In alternativa si possono usare telecamere dotate di LED infrarossi.</p>
+
+                            <p>Esistono molti tipi di dispositivi, come:</p>
+
+                            <p><strong>IP</strong>: consentono di utilizzare la rete internet per sorvegliare a distanza il luogo desiderato.<br />
+
+                                <strong>Speed Dome</strong>: consiste in un particolare tipo di telecamere mimetizzate; esse si trovano comunemente in
+    parchi, autostrade e luoghi pubblici, possono ruotare di 360° e sono perfette per sorvegliare ambienti grandi.<br />
+
+                                <strong>Finte</strong>: sono telecamere non funzionanti, dotate di un LED lampeggiante
+                                per simulare una telecamera attiva.<br />
+
+                                <strong>LED infrarossi</strong>: permettono la visione in bianco e in nero anche in piena notte.
+    Sono spesso dotate di un sensore crepuscolare che fà accendere i LED infrarossi al tramonto del sole.</p>
+       <header><h3>
+           Supporto nella scelta della migliore soluzione per te e la tua attività</h3></header>
+<p>Ormai da tempo, la videosorveglianza rappresenta un aspetto essenziale dela sicurezza e, grazie alle nuove scoperte nel campo tecnologico, le telecamere utilizzate sono più efficaci che mai.
+
+    Sono in costante aumento le strutture come banche, negozi, distributori di benzina, gioiellerie, aziende, tabacchini, privati e innumerevoli altri utenti che dipendono dalla protezione fornita dalla videosorveglianza.</p>
+
+                            <p>Questa avviene tramite telecamere di ogni tipo e tipologia a seconda delle esigenze dell’installazione. Telecamere a raggi infrarossi che danno la possibilità di riprendere le immagini anche in assenza di luce; con obbiettivi varifocal per riprendere ogni tipo di dimensione diversa a seconda delle esigenze del cliente, oppure telecamere motorizzate che possono essere guidate da comandi esterni.</p>
+
+<p>Ma che cosa rende una telecamera diversa da un’altra?<br />
+
+    Quale tipo di telecamera è la migliore per il mio negozio?</p>
+
+                            <p>Come faccio a capire esattamente cosa mi serve?</p>
+
+                            <p>Non preoccuparti, contattaci e ti forniremo tutto il supporto necessario per la scelta della telecamera più adatta alla tua attività.</p>
+
+
+      
+    <div class="mx-auto" style="width: 200px;"> <ul class="actions fit">
+           <li> <a class="btn button special fit" href="{% url 'page' 'contatti' %}" role="button">Contattaci</a></li></ul></div>
+           <p class="align-center">per richiedere preventivi gratuiti e maggiori informazioni
+                
+            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+   
+
+
+

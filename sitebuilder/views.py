@@ -78,14 +78,15 @@ def page(request, slug='index'):
             # cd = form.cleaned_data
             subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['from_email']
-            message = 'This is the message: {} from the email: {}'.format(form.cleaned_data['message'], from_email)
+            message = 'Ecco il messaggio dalla pagina "Contatti": {} from the email: {}'.format(form.cleaned_data['message'], from_email)
         try:
-            send_mail(subject, message,'developers@clueb.it', [from_email], fail_silently=False)
+            send_mail(subject, message, 'mpelectronicsystem.it', [from_email], fail_silently=False)
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         context = {
             'slug': 'success',
             'page': page,
+            'message': message,
         }
         return render(request, "success.html", context)
     else:

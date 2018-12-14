@@ -1,12 +1,18 @@
 {% load staticfiles %}
-
+<section id="One" class="wrapper style3">
+                <div class="inner">
+                    <header class="align-center">
+                        <p>La protezione della casa e dell'ufficio</p>
+                        <h2>Scrivici usando questo modulo</h2>
+                    </header>
+                </div>
+            </section>
 <div class="container py-5 text-center">
     <div class="row">
         <div class="col-md-4"></div>
         <form class="form-contact col-md-4" role="form" action="{% url 'page' 'success' %}" method="post" >
             {% csrf_token %}
             {{ form }}
-            <h2>Scrivici usando questo modulo</h2>
             <div class="form-group">
                 <input type="email" class="form-control"
                     placeholder="La tua Email" required="" name="from_email" >
@@ -36,13 +42,13 @@
         <div class="col-md-6">
             <h2>La nostra sede</h2>
             <address>
-                <strong>MP Electronics</strong><br>
-                123 Something St<br>
-                New York, NY 00000<br>
-                (212) 555 - 1234
+                <strong>MP Electronic Systems</strong><br>
+                Via Canaletto 40/b/c<br>
+                41030 S.Prospero (MO)<br>
+                tel 059 809387
             </address>
             <h4 class="py-3">Se preferisci telefonaci al numero: <br />345 678912</h4>
-            <h4>oppure scrivi una mail a xxx@xyz.com</h4>
+
         </div>
         <div class="col-md-3"></div>
     </div>

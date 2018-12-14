@@ -9,6 +9,8 @@ settings.configure(
     SECRET_KEY='f91oh8l1dymu)87ejlwbd7-@kac50owy@6^_8$@ky9jvfgma02',
     ROOT_URLCONF='sitebuilder.urls',
     MIDDLEWARE_CLASSES=(),
+    #ALLOWED_HOSTS = ['127.0.0.1', '207.154.240.36'],
+    ALLOWED_HOSTS = [],
     INSTALLED_APPS=(
         'django.contrib.staticfiles',
         'sitebuilder',
@@ -37,8 +39,8 @@ settings.configure(
     EMAIL_HOST='smtp.gmail.com',
     EMAIL_PORT=587,
     EMAIL_USE_TLS=True,
-    EMAIL_HOST_USER='developers@clueb.it',
-    EMAIL_HOST_PASSWORD='Ecommerce2018'
+    EMAIL_HOST_USER='claudio.tubertini@gmail.com',
+    EMAIL_HOST_PASSWORD='Matilde1995?'
 )
 
 application = get_wsgi_application()

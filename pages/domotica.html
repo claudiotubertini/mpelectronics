@@ -1,69 +1,73 @@
-{% block context %}
-{
-    "description": "Product Pricing Plans",
-    "keywords": "products,pricing,buy me",
-    "plans": [
-        {
-            "name": "Starter",
-            "price": "Free",
-            "class": "success",
-            "features": [1]
-        },
-        {
-            "name": "Basic",
-            "price": "$10 / month",
-            "class": "danger",
-            "features": [1, 2]
-        },
-        {
-            "name": "Enterprise",
-            "price": "$20 / month",
-            "class": "info",
-            "features": [1, 2, 3]
-        }
-    ],
-    "features": [
-        "Feature #1",
-        "Feature #2",
-        "Feature #3"
-    ]
-}
-{% endblock %}
+{% load staticfiles %}
+<section id="One" class="wrapper style3">
+                <div class="inner">
+                    <header class="align-center">
+                        <p>La protezione della casa e dell'ufficio</p>
+                        <h2>Domotica</h2>
+                    </header>
+                </div>
+            </section>
+            <section id="two" class="wrapper style2">
+                <div class="inner">
+                    <div class="box text-dark">
+                        <p class="content">
 
-<div class="container py-5">
-    <h1>Pagina in preparazione</h1>
-</div>
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<h2>Available Pricing Plans</h2>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--{% for plan in plans %}-->
-        <!--<div class="col-md-4">-->
-            <!--<div class="panel panel-{{ plan.class }}">-->
-                <!--<div class="panel-heading">-->
-                    <!--<h4 class="text-center">-->
-                    <!--{{ plan.name }} Plan - {{ plan.price }}</h4>-->
-                <!--</div>-->
-                <!--<ul class="list-group list-group-flush text-center">-->
-                    <!--{% for feature in features %}-->
-                    <!--<li class="list-group-item -->
-                    <!--{% if forloop.counter not in plan.features %}-->
-                    <!--disabled {% endif %}">{{ feature }}</li>-->
-                    <!--{% endfor %}-->
-                <!--</ul>-->
-                <!--<div class="panel-footer">-->
-                    <!--<a class="btn btn-lg btn-block btn-{{ plan.class }}" href="#">BUY NOW!</a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-       <!---->
-       <!--{% endfor %}-->
-    <!--</div>-->
-    <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-            <!--<p>{% lorem %}</p>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+                            <div class="row">
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Preventivi-impianto-elettrico-domotico.png' %}" width="300px" alt="" /></div>
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Realizzazione-impianto-elettrico-domotico-modena.png' %}" width="300px" alt="" /></div>
+                                <div class="col-md-4"><img class="img-thumbnail img-fluid border border-dark rounded"
+                                                           src="{% static 'images/_Prezzi-realizzazione-impianto-san-giovanni-in-persiceto.png' %}" width="300px" alt="" /></div>
+                            </div>
+                           <h3>Realizza il tuo impianto elettrico domotico con noi!</h3>
+<>Quando si parla di domotica, facciamo riferimento alla tecnologia che oggi rende la nostra abitazione intelligente.<br />
+Fin troppo spesso ci capita di sentir parlare di domotica e che essa <strong>può
+                            aiutarci a vivere meglio</strong>, ma non tutti sanno di cosa si tratta.</p>
+<p><strong>Cos’è, quindi, la domotica?</strong><br />
+<p>In sostanza, è una branca della tecnologia avente lo scopo di semplificare la vita degli utenti che ne fanno uso
+                        tramite apposite macchine e apparecchi.</p>
+<p>Se vuoi procedere con la <strong>realizzazione </strong>di un impianto elettrico domotico, economico, per il tuo appartamento, rivolgiti a noi!</p>
+
+
+<h3>Composizione di un impianto domotico</h3>
+<>In genere, un impianto domotico si compone di <strong>un&#8217;unità centrale</strong>,
+    la quale costituisce il cuore del sistema e gestisce i dispositivi periferici; non è raro trovare sistemi
+    che abbiano come unità centrale un pc dedicato o una più comune centralina domotica.<br />
+Come caratteristica principale, questi sistemi, <strong>devono essere accessibili</strong>; questo per essere facilmente impiegabili, per godere di una grande diffusione e per essere comprensibili anche ai meno competenti in materia di tecnologia.<br />
+Di conseguenza, il sistema, tra i requisiti necessari deve possedere un&#8217;interfaccia utente di facile utilizzo,
+                        che consenta all&#8217;utente di interagire in modo semplice con il sistema.<br />
+La realizzazione dell’impianto elettrico domotico ha origine negli Stati Uniti, ma inizia a fare sentire importanti effetti sulla qualità dell&#8217;abitare anche in Europa; questa tecnologia non è affatto un lusso, ma alla portata di tutti.</p>
+
+
+
+
+
+<h3>Quanto costa realizzare un impianto domotico?</h3>
+<>Non è possibile fornire una cifra, anche solo approssimativa, per un impianto domotico “chiavi in mano”.<br />
+Infatti, i costi per la realizzazione di un impianto domotico sono legati ad una serie di variabili come:<br />
+<ul>
+<li><strong>Opere murarie</strong></li>
+<li><strong>Grandezza dell’abitazione</strong></li>
+<li><strong>Numero e complessità dei sistemi da controllare</strong></li>
+<li><strong>Configurazione dell’impianto elettrico presente</strong></li>
+<li><strong>Piano in cui si trova l’abitazione</strong></li>
+<li><strong>Difficoltà di montaggio</strong></li>
+</ul>
+<>Nonostante i costi da sostenere per la realizzazione di un impianto domotico, è utile prendere in considerazione
+    il fatto che questa tecnologia, negli ultimi anni, sia diventata un importante strumento di incentivazione delle vendite.<br />
+Se dotato di impianto domotico, il valore percepito dell’immobile cresce in maniera decisa; pertanto la dotazione
+                        domotica diviene un elemento di qualificazione dell’investimento immobiliare,
+                        determinando un conseguente incremento del valore commerciale dell’abitazione e un importante
+                        argomento di vendita.</p>
+
+
+    <div class="mx-auto" style="width: 200px;"> <ul class="actions fit">
+           <li> <a class="btn button special fit" href="{% url 'page' 'contatti' %}" role="button">Contattaci</a></li></ul></div>
+           <p class="align-center">per richiedere preventivi gratuiti e maggiori informazioni
+
+            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>

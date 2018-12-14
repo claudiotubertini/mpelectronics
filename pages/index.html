@@ -34,16 +34,16 @@
 					<img src="{% static 'images/climatizzazione.jpeg' %}"  alt="" />
 					<div class="inner">
 						<header>
-							<p>Adipiscing lorem ipsum feugiat sed phasellus consequat</p>
+							<p>Un clima confortevole in ogni ambiente al lavoro come a casa</p>
 							<h2><a href="{% url 'page' 'climatizzazione' %}">Climatizzazione</a></h2>
 						</header>
 					</div>
 				</article>
 				<article>
-					<img src="{% static 'images/slide05.jpg' %}"  alt="" />
+					<img src="{% static 'images/automazioni2.jpg' %}"  alt="" />
 					<div class="inner">
 						<header>
-							<p>Ipsum dolor sed magna veroeros lorem ipsum</p>
+							<p>La tecnologia che rende la nostra abitazione intelligente</p>
 							<h2><a href="{% url 'page' 'automazioni' %}">Automazioni</a></h2>
 						</header>
 					</div>
@@ -52,20 +52,12 @@
 					<img src="{% static 'images/_Allarmi-per-macchine-industriali-correggio.png' %}"  alt="" />
 					<div class="inner">
 						<header>
-							<p>Ipsum dolor sed magna veroeros lorem ipsum</p>
+							<p>Dispositivi per la rilevazione di anomalie in macchine ed apparecchiature industriali </p>
 							<h2><a href="{% url 'page' 'allarmi_tecnici' %}">Allarmi tecnici</a></h2>
 						</header>
 					</div>
 				</article>
-				<article>
-					<img src="{% static 'images/slide07.jpg' %}"  alt="" />
-					<div class="inner">
-						<header>
-							<p>Ipsum dolor sed magna veroeros lorem ipsum</p>
-							<h2><a href="{% url 'page' 'domotica' %}">Domotica</a></h2>
-						</header>
-					</div>
-				</article>
+
 			</section>
 
 		<!-- One -->
@@ -76,16 +68,19 @@
 						<div>
 							<div class="box">
 								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" />
+									<img src="{% static 'images/telecamera_WA0006.jpg' %}"  alt="" />
 								</div>
 								<div class="content">
 									<header class="align-center">
-										<p>maecenas sapien feugiat ex purus</p>
-										<h2>Lorem ipsum dolor</h2>
+										<p>Sistemi d'allarme Antirapina Telesoccorso</p>
+										<h2>Antifurto</h2>
 									</header>
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+									<p> Sistemi di protezione passiva, è opportuno pensare a quegli impianti elettronici in grado di rilevare un potenziale pericolo e quindi, di annullarlo; parliamo dei sistemi d’allarme antintrusione. A un
+										sistema di videosorveglianza, viene spesso associato un impianto di allarme
+										in modo da consentire una sinergia fra la necessità di protezione,
+										e di verifica di quanto segnalato dal sistema antifurto.</p>
 									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
+										<a href="{% url 'page' 'antifurto' %}" class="button alt">Leggi tutto</a>
 									</footer>
 								</div>
 							</div>
@@ -94,20 +89,25 @@
 						<div>
 							<div class="box">
 								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" />
+									<img src="{% static 'images/_antincendio-mobile2.jpg' %}"  alt="" />
 								</div>
 								<div class="content">
 									<header class="align-center">
-										<p>mattis elementum sapien pretium tellus</p>
-										<h2>Vestibulum sit amet</h2>
+										<p>Rilevazione incendio e fughe di gas</p>
+										<h2>Antincendio</h2>
 									</header>
-									<p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+									<p> Dotarsi di sensori di segnalazione incendi è una misura preventiva molto importante.
+										Essi non sono altro che un insieme di apparecchiature in grado di rilevare e segnalare la
+										presenza di un incendio all’interno di un edificio.
+										Installiamo anche rilevatori di fughe di gas ed evacuatori di calore e fumi.</p>
 									<footer class="align-center">
-										<a href="#" class="button alt">Learn More</a>
+										<a href="{% url 'page' 'antincendio' %}" class="button alt">Leggi tutto</a>
 									</footer>
 								</div>
 							</div>
 						</div>
+
+
 
 					</div>
 				</div>
@@ -117,9 +117,12 @@
 			<section id="two" class="wrapper style3">
 				<div class="inner">
 					<header class="align-center">
-						<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>Morbi maximus justo</h2>
+						<p>Telecamere a circuito chiuso telegestibili e robotizzate</p>
+						<h2>Videosorveglianaza</h2>
 					</header>
+					<footer class="align-center">
+										<a href="{% url 'page' 'videosorveglianza' %}" class="button alt">Leggi tutto</a>
+									</footer>
 				</div>
 			</section>
 
@@ -127,30 +130,26 @@
 			<section id="three" class="wrapper style2">
 				<div class="inner">
 					<header class="align-center">
-						<p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>Morbi maximus justo</h2>
+						<p class="special">Cancelli, sbarre, portoni automatizzati</p>
+						<h2>Cancelli e Domotica</h2>
 					</header>
-					<div class="gallery">
+					<footer class="align-center">
+										<a href="{% url 'page' 'automazioni' %}" class="button alt">Leggi tutto</a>
+									</footer>
+					<div class="gallery content">
 						<div>
+
 							<div class="image fit">
-								<a href="#"><img src="images/pic01.jpg" alt="" /></a>
+								<h2 class="align-center"><a href="{% url 'page' 'climatizzazione' %}">Climatizzazione</a></h2>
 							</div>
+
 						</div>
 						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic02.jpg" alt="" /></a>
+							<div class="image fit style2">
+								<h2 class="align-center"><a href="{% url 'page' 'allarmi_tecnici' %}">Allarmi tecnici</a></h2>
 							</div>
 						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic03.jpg" alt="" /></a>
-							</div>
-						</div>
-						<!-- <div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic04.jpg" alt="" /></a>
-							</div>
-						</div> -->
+
 					</div>
 				</div>
 			</section>

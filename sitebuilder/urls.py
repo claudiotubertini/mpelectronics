@@ -20,8 +20,6 @@ from .views import page
 
 
 urlpatterns = (
-    #path('contatti/', contattiView, name='contatti'),
-    #path('success/', successView, name='success'),
     url(r'^(?P<slug>[\w._/-]+)/$', page, name='page'),
     url(r'^$', page, name='homepage'),
 )
