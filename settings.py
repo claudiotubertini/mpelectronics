@@ -39,6 +39,6 @@ STATICFILES_FINDERS=(
 EMAIL_HOST = 'smtp.gmail.com',
 EMAIL_PORT = 587,
 EMAIL_USE_TLS = True,
-EMAIL_HOST_USER = 'info@mpelectronicsystem.it',
-EMAIL_HOST_PASSWORD = 'bCPwEZRkETM5kEV'
+EMAIL_HOST_USER = 'claudio.tubertini@gmail.com',
+EMAIL_HOST_PASSWORD = 'Matilde1995?'
 
