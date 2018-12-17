@@ -10,7 +10,7 @@ settings.configure(
     ROOT_URLCONF='sitebuilder.urls',
     MIDDLEWARE_CLASSES=(),
     #ALLOWED_HOSTS = ['127.0.0.1', '207.154.240.36'],
-    ALLOWED_HOSTS = [],
+    ALLOWED_HOSTS=[],
     INSTALLED_APPS=(
         'django.contrib.staticfiles',
         'sitebuilder',
